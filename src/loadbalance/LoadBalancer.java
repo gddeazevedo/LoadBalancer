@@ -1,11 +1,11 @@
 package loadbalance;
 
-import servers.ServerTest;
+import servers.Server;
 import java.util.ArrayList;
 
 
 public class LoadBalancer {
-    private final ArrayList<ServerTest> servers;
+    private final ArrayList<Server> servers;
     private int currentIndex;
 
     public LoadBalancer() {
@@ -13,7 +13,7 @@ public class LoadBalancer {
         this.currentIndex = 0;
     }
 
-    public void addServer(ServerTest server) {
+    public void addServer(Server server) {
         this.servers.add(server);
     }
 

@@ -1,10 +1,10 @@
 package servers;
 
-public class ServerTest {
+public class Server {
     private final String name;
     private boolean isAvailable;
 
-    public ServerTest(String name) {
+    public Server(String name) {
         this.name = name;
         this.isAvailable = true;
     }

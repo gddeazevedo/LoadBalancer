@@ -1,5 +1,5 @@
 import loadbalance.LoadBalancer;
-import servers.ServerTest;
+import servers.Server;
 
 
 void main() {
@@ -7,9 +7,9 @@ void main() {
 
     var loadBalancer = new LoadBalancer();
 
-    var s1 = new ServerTest("Server-1");
-    var s2 = new ServerTest("Server-2");
-    var s3 = new ServerTest("Server-3");
+    var s1 = new Server("Server-1");
+    var s2 = new Server("Server-2");
+    var s3 = new Server("Server-3");
 
     loadBalancer.addServer(s1);
     loadBalancer.addServer(s2);
